@@ -5,7 +5,7 @@ module PuppetLitmus; end # rubocop:disable Style/Documentation
 # helper methods for the litmus rake tasks
 module PuppetLitmus::RakeHelper
   DEFAULT_CONFIG_DATA ||= { 'modulepath' => File.join(Dir.pwd, 'spec', 'fixtures', 'modules') }.freeze
-  VALID_PROVISIONERS ||= %w[abs docker docker_exp vagrant vmpooler].freeze
+  VALID_PROVISIONERS ||= %w[abs docker docker_exp vagrant vmpooler terraform_gcp].freeze
 
   # Gets a string representing the operating system and version.
   #
